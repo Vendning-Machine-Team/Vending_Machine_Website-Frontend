@@ -1,0 +1,21 @@
+# Ignoring node modules folder
+node_modules/
+
+# Ignore environmental variables
+*.env
+
+# Allow tracking of package.json
+!package.json
+
+# Allow tracking of dist directory
+!dist/
+
+#Database related files
+data/
+
+#ignore venv
+venv/
+
+#banned words list 
+banned_words.py
+*.pyc
