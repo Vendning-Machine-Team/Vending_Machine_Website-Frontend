@@ -1,4 +1,4 @@
-import"./style-B4IgR0yf.js";const i=document.getElementById("payButton"),l=document.getElementById("reportButton"),p=document.getElementById("total"),s=document.getElementById("productContainer");let o=[],a={};async function c(){o=await(await fetch("/api/products")).json(),s.innerHTML="",o.forEach(e=>{a[e.id]=0;const t=document.createElement("div");t.className="flex justify-between items-center py-3 border-b",t.innerHTML=`
+import"./style-D8odUd8i.js";const i=document.getElementById("payButton"),l=document.getElementById("reportButton"),p=document.getElementById("total"),s=document.getElementById("productContainer");let o=[],a={};async function c(){o=await(await fetch("/api/products")).json(),s.innerHTML="",o.forEach(e=>{a[e.id]=0;const t=document.createElement("div");t.className="flex justify-between items-center py-3 border-b",t.innerHTML=`
             <div>
             <p class="font-medium">${e.name}</p>
             <p class="text-sm text-gray-500">$${e.price}</p>

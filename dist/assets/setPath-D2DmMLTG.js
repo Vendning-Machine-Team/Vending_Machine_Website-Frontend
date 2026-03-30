@@ -1,0 +1,1 @@
+import"./style-D8odUd8i.js";const t=document.getElementById("homeButton"),o=document.getElementById("confirmButton");t.addEventListener("click",()=>{window.location.replace("./adminDashboard.html"),console.log("Home button clicked")});o.addEventListener("click",()=>{alert("Successfully updated path bounds"),console.log("Confirm button clicked")});
