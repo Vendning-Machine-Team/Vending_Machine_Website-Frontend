@@ -8,6 +8,8 @@ let products = [];
 //this cart keeps track of the quantity of reach product
 let cart = {};
 
+let total = 0;
+
 // Load products from database
 async function loadProducts() {
 
@@ -69,7 +71,7 @@ function addInputListeners() {
 
 // Calculate total price
 function calculateTotal() {
-    let total = 0;
+    total = 0;
     products.forEach(product => {
 
         const qty = cart[product.id] || 0;
@@ -97,7 +99,8 @@ payButton.addEventListener("click", async () => {
         "Content-Type": "application/json"
     },
     body: JSON.stringify({
-        items: cart
+        items: cart,
+        total: total
     })
 });
 
