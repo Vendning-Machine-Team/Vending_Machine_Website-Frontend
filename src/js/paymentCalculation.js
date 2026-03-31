@@ -92,29 +92,31 @@ reportButton.addEventListener("click", () => {
 
 //this currently points to a fake "stripe" session id this may need some slight changing in the future
 payButton.addEventListener("click", async () => {
+    try {
+        const response = await fetch("/api/create-checkout-session", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                items: cart   // ✅ send full cart
+            })
+        });
 
-    const response = await fetch("/api/create-test-payment", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        items: cart,
-        total: total
-    })
-});
+        const data = await response.json();
 
-    const data = await response.json();
+        if (!response.ok) {
+            alert(data.error || "Inventory issue. Try again.");
+            loadProducts();
+            return;
+        }
 
-    //checks to make sure that inventory was okay while ordering if not then it tells them
-    if (!response.ok) {
-        alert("Inventory changed while you were ordering. Please update your selection.");
-        loadProducts(); // refresh inventory from server
-        return;
+        window.location.href = data.url;
+
+    } catch (err) {
+        console.error(err);
+        alert("Something went wrong starting checkout.");
     }
-    const sessionId = data.session_id;
-
-    window.location.replace(`./pages/paymentCode.html?session_id=${sessionId}`);
 });
 
 loadProducts();
