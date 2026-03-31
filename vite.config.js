@@ -31,6 +31,7 @@ export default defineConfig({
         setInventory: resolve(__dirname, 'pages/setInventory.html'),
         setPath: resolve(__dirname, 'pages/setPath.html'),
         viewActions: resolve(__dirname, 'pages/viewActions.html'),
+        paymentError: resolve(__dirname, 'pages/paymentError.html'),
       }
     }
   }
