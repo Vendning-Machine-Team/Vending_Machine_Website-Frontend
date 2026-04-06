@@ -99,7 +99,7 @@ payButton.addEventListener("click", async () => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                items: cart   // ✅ send full cart
+                items: cart   // send full cart
             })
         });
 
