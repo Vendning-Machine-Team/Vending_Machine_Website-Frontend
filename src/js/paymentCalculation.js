@@ -10,13 +10,7 @@ let cart = {};
 
 let total = 0;
 
-// we can put the images intot the database and see how that works 
-const imageMap = {
-  candy: new URL("../images/candy.jpeg", import.meta.url).href,
-  chips: new URL("../images/chips.jpeg", import.meta.url).href,
-  cookies: new URL("../images/cookies.jpeg", import.meta.url).href,
-  takis: new URL("../images/takis.jpeg", import.meta.url).href,
-};
+
 
 
 async function loadProducts() {
@@ -28,8 +22,8 @@ async function loadProducts() {
     products.forEach(product => {
         cart[product.id] = 0;
 
-        const imageKey = product.name.trim().toLowerCase();
-        const productImage = imageMap[imageKey];
+        const productImage = product.image_url
+        console.log(productImage);
 
         const row = document.createElement("div");
         row.className = "bg-white rounded-2xl shadow p-4 flex flex-col items-center text-center";
