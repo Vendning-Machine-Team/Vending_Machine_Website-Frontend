@@ -12,10 +12,10 @@ let total = 0;
 
 // we can put the images intot the database and see how that works 
 const imageMap = {
-  candy: new URL("../Images/candy.jpeg", import.meta.url).href,
-  chips: new URL("../Images/chips.jpeg", import.meta.url).href,
-  cookies: new URL("../Images/cookies.jpeg", import.meta.url).href,
-  takis: new URL("../Images/takis.jpeg", import.meta.url).href,
+  candy: new URL("../images/candy.jpeg", import.meta.url).href,
+  chips: new URL("../images/chips.jpeg", import.meta.url).href,
+  cookies: new URL("../images/cookies.jpeg", import.meta.url).href,
+  takis: new URL("../images/takis.jpeg", import.meta.url).href,
 };
 
 
