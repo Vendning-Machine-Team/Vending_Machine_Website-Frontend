@@ -1,0 +1,1 @@
+import"./style-_gm7ZM6v.js";const t=document.getElementById("reportButton"),e=document.getElementById("homeButton");e.addEventListener("click",()=>{window.location.replace("../index.html")});t.addEventListener("click",()=>{window.location.replace("./reportIssue.html")});

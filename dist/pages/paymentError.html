@@ -5,34 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Issue with Payment</title>
 
-  <!-- This was originally payment page, is now the new "start page" -->
-
-  <script type="module" crossorigin src="../assets/paymentError-DujawR-Y.js"></script>
-  <link rel="modulepreload" crossorigin href="../assets/style-D8odUd8i.js">
-  <link rel="stylesheet" crossorigin href="../assets/style-DJwHEuAg.css">
+  <script type="module" crossorigin src="../assets/paymentError-Cqxy1qAU.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/style-_gm7ZM6v.js">
+  <link rel="stylesheet" crossorigin href="../assets/style-BG7RjkrG.css">
 </head>
 
-<body class="min-h-screen relative bg-gradient-to-br from-purple-300 to-pink-200">
+<body class="min-h-screen bg-gradient-to-br from-purple-300 to-pink-200">
+  <div class="min-h-screen flex items-center justify-center px-4">
+    <div class="bg-white/80 backdrop-blur-xl rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] p-8 sm:p-10 w-full max-w-xl text-center">
 
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="bg-white/80 backdrop-blur-xl rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] p-10 w-full max-w-lg">
+      <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-red-100 shadow-inner">
+        <span class="text-3xl">!</span>
+      </div>
 
-      <h1 class="text-4xl font-semibold text-gray-900 tracking-tight text-center">
-        There was an issue with your payment. Please try again or contact support if the issue persists.
+      <h1 class="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight leading-tight">
+        Payment unsuccessful
       </h1>
 
-      <div class="mt-10 space-y-2">
+      <p class="mt-4 text-base text-gray-600 leading-relaxed">
+        There was an issue processing your payment. Please try again, or contact support if the problem continues.
+      </p>
+
+      <div class="mt-8 space-y-3">
         <button id="homeButton" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-4 rounded-2xl font-semibold transition shadow-md">
           Home
         </button>
-        
+
         <button id="reportButton" class="w-full bg-red-400 hover:bg-red-500 text-white py-4 rounded-2xl font-semibold transition shadow-md">
           Report an issue
         </button>
       </div>
     </div>
-
   </div>
-
 </body>
 </html>
