@@ -10,35 +10,44 @@ let cart = {};
 
 let total = 0;
 
-// Load products from database
-async function loadProducts() {
+// we can put the images intot the database and see how that works 
+const imageMap = {
+  candy: new URL("../Images/candy.jpeg", import.meta.url).href,
+  chips: new URL("../Images/chips.jpeg", import.meta.url).href,
+  cookies: new URL("../Images/cookies.jpeg", import.meta.url).href,
+  takis: new URL("../Images/takis.jpeg", import.meta.url).href,
+};
 
+
+async function loadProducts() {
     const response = await fetch("/api/products");
     products = await response.json();
 
     productContainer.innerHTML = "";
-    //this builds the html based on the products in the database.
-    products.forEach(product => {
 
+    products.forEach(product => {
         cart[product.id] = 0;
 
-        const row = document.createElement("div");
-        row.className = "flex justify-between items-center py-3 border-b";
+        const imageKey = product.name.trim().toLowerCase();
+        const productImage = imageMap[imageKey];
 
+        const row = document.createElement("div");
+        row.className = "bg-white rounded-2xl shadow p-4 flex flex-col items-center text-center";
+        
         row.innerHTML = `
-            <div>
-            <p class="font-medium">${product.name}</p>
+            <img src="${productImage}" alt="${product.name}" class="w-28 h-28 object-cover rounded-lg mb-3">
+
+            <p class="font-medium text-lg">${product.name}</p>
             <p class="text-sm text-gray-500">$${product.price}</p>
-            <p class="text-xs text-gray-400">${product.inventory} available</p>
-            </div>
+            <p class="text-xs text-gray-400 mb-3">${product.inventory} available</p>
 
             <input
-            type="number"
-            min="0"
-            max="${product.inventory}"
-            value="0"
-            data-id="${product.id}"
-            class="w-20 text-center border rounded-lg"
+                type="number"
+                min="0"
+                max="${product.inventory}"
+                value="0"
+                data-id="${product.id}"
+                class="w-20 text-center border rounded-lg"
             >
         `;
 

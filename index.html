@@ -5,32 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pay For Snacks</title>
 
-  <!-- This was originally payment page, is now the new "start page" -->
   <link rel="stylesheet" href="/src/style.css">
-
-  <script type = "module" src="/src/js/paymentCalculation.js" defer></script>
+  <script type="module" src="/src/js/paymentCalculation.js" defer></script>
 </head>
 
 <body class="min-h-screen relative bg-gradient-to-br from-purple-300 to-pink-200">
-    <a
-    href="./pages/adminLogin.html"
-    class="absolute top-6 right-6 text-sm font-medium text-gray-600 hover:text-gray-900 transition"
-  >
-    Admin Login
-  </a>
+  <div class="min-h-screen flex items-center justify-center px-4">
+    <div class="relative bg-white/80 backdrop-blur-xl rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] p-10 w-full max-w-5xl">
 
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="bg-white/80 backdrop-blur-xl rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] p-10 w-full max-w-lg">
+      <a
+        href="./pages/adminLogin.html"
+        class="absolute top-6 right-6 text-sm font-medium text-gray-500 hover:text-gray-900 transition bg-white/70 px-4 py-2 rounded-xl shadow-sm"
+      >
+        Admin Login
+      </a>
 
       <h1 class="text-4xl font-semibold text-gray-900 tracking-tight text-center">
         Pay for Snacks
       </h1>
 
-      <p class="text-sm text-gray-500 text-center mt-2">
-        Simple checkout
-      </p>
 
-      <div id="productContainer" class="mt-6 space-y-2"></div>
+
+      <div id="productContainer" class="mt-8 grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] gap-6"></div>
 
       <div class="mt-8 text-center">
         <p class="text-xs uppercase tracking-wide text-gray-500">
@@ -51,8 +47,6 @@
         </button>
       </div>
     </div>
-
   </div>
-
 </body>
 </html>
