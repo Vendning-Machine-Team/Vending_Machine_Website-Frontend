@@ -1,3 +1,5 @@
+<img width="1672" height="961" alt="muchin us" src="https://github.com/user-attachments/assets/e8a2b8f5-27fd-42ee-a9fa-c1bfaa931a20" />  
+
 # Vending Machine Team Website Frontend  
 Website Team: [Adeyemi](https://github.com/AdeyemiAkanbi), [Prince](https://github.com/IMPr1nce), [Samantha](https://github.com/SamMac55)  
 Advisor: [Matthew Thomas Beck](https://github.com/matthewthomasbeck)  
