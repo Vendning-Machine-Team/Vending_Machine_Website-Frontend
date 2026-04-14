@@ -13,7 +13,7 @@ node_modules/
 !package.json
 
 # Allow tracking of dist directory
-!dist/
+dist/
 
 #Database related files
 data/
