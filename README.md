@@ -1,24 +1,25 @@
 <img width="1672" height="961" alt="muchin us" src="https://github.com/user-attachments/assets/e8a2b8f5-27fd-42ee-a9fa-c1bfaa931a20" />  
 
 # Vending Machine Team Website Frontend  
-### By: Adeyemi Akanbi - [Github](https://github.com/AdeyemiAkanbi), [LinkedIn](https://www.linkedin.com/in/adeyemi-akanbi-62a1a1386/) | Prince Patel - [Github](https://github.com/IMPr1nce), [LinkedIn](https://www.linkedin.com/in/ppatel9114/) | Samantha Machado [Github](https://github.com/SamMac55), [LinkedIn](https://www.linkedin.com/in/samantha-machado-b7b5a7329/)
-Advisor: [Matthew Thomas Beck](https://github.com/matthewthomasbeck)  
+### By: [Adeyemi Akanbi](https://www.linkedin.com/in/adeyemi-akanbi-62a1a1386/), [Prince Patel](https://www.linkedin.com/in/ppatel9114/), [Samantha Machado](https://www.linkedin.com/in/samantha-machado-b7b5a7329/)  
+Advisor: [Matthew Thomas Beck](https://www.linkedin.com/in/matthewthomasbeck/) 
 
-__Special thanks to the robot and pathfinding teams of this project__ 
+__Special thanks to the robot and pathfinding teams of this project__  
+__Please consider__: if you like it __star it__!
 
 ## Tech Stack
 **Language**: HTML, Javascript\
 **Frameworks**: Vite, Tailwindcss  
 
 ## Roles
-Samantha Machado:
+[Samantha Machado](https://github.com/SamMac55):
 * Website Architect (*Designed website structure*)
 * Software Developer (*Utilized Tailwind to stylize the website, Added communication between frontend and backend via API requests, Collaborated to create an administrative dashboard system, Collaborated to develop website structure*)
 
-Prince Patel:
+[Prince Patel](https://github.com/IMPr1nce):
 * Software Developer (*Added payment processing with stripe integration, Implemented intuitive Interface to streamline user experience, Collaborated to create an administrative dashboard system, Collaborated to develop website structure*)
 
-Adeyemi Akanbi:
+[Adeyemi Akanbi](https://github.com/AdeyemiAkanbi):
 * Software Developer (*Collaborated to create an administrative dashboard system and Collaborated to develop website structure*)
 
 ## Basic information
