@@ -44,7 +44,7 @@ This website presents a playful yet highly functional digital storefront for pur
 
 Once a purchase is completed, the website generates a unique, one-time-use code tied directly to the transaction. This code acts as the bridge between the digital and physical experience: the code is sent to the robot via the [backend](https://github.com/Vendning-Machine-Team/Vending_Machine_Website-Backend), while customers also input the same code into the robot to securely retrieve their purchase. The process is streamlined to minimize friction, reinforcing the site’s focus on ease of use and quick interaction. The system ensures that each code is valid for a single redemption, maintaining both efficiency and security in the handoff from online purchase to real-world fulfillment.
 
-![Front Page](images/front_page.png)
+![Set Inventory](images/set_inventory.png.webp)
 
 Behind the scenes, the website includes a dedicated administrative login that enables authorized users to manage key operational aspects. Through this admin interface, administrators can monitor and update the robot’s inventory, ensuring that stock levels accurately reflect what is physically available. They can also adjust the pricing of individual snacks as needed, providing flexibility in response to supply or demand. These controls are clearly separated from the customer-facing experience, allowing the platform to function as both a user-friendly storefront and a practical management tool for maintaining the robot’s operations.
 
