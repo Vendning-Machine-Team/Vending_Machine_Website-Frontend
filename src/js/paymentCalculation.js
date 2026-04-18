@@ -19,34 +19,38 @@ async function loadProducts() {
 
     productContainer.innerHTML = "";
 
-    products.forEach(product => {
-        cart[product.id] = 0;
+ products.forEach(product => {
+    cart[product.id] = 0;
 
-        const productImage = product.image_url
-        console.log(productImage);
+    const productImage =  `/images/${product.name.trim().toLowerCase()}.jpeg` || product.image_url;
 
-        const row = document.createElement("div");
-        row.className = "bg-white rounded-2xl shadow p-4 flex flex-col items-center text-center";
-        
-        row.innerHTML = `
-            <img src="${productImage}" alt="${product.name}" class="w-28 h-28 object-cover rounded-lg mb-3">
+    const row = document.createElement("div");
+    row.className = "bg-white rounded-2xl shadow p-4 flex flex-col items-center text-center";
 
-            <p class="font-medium text-lg">${product.name}</p>
-            <p class="text-sm text-gray-500">$${product.price}</p>
-            <p class="text-xs text-gray-400 mb-3">${product.inventory} available</p>
+    row.innerHTML = `
+        <img
+            src="${productImage}"
+            alt="${product.name}"
+            class="w-28 h-28 object-cover rounded-lg mb-3"
+            onerror="this.onerror=null; this.src='/images/default.jpg';"
+        >
 
-            <input
-                type="number"
-                min="0"
-                max="${product.inventory}"
-                value="0"
-                data-id="${product.id}"
-                class="w-20 text-center border rounded-lg"
-            >
-        `;
+        <p class="font-medium text-lg">${product.name}</p>
+        <p class="text-sm text-gray-500">$${product.price}</p>
+        <p class="text-xs text-gray-400 mb-3">${product.inventory} available</p>
 
-        productContainer.appendChild(row);
-    });
+        <input
+            type="number"
+            min="0"
+            max="${product.inventory}"
+            value="0"
+            data-id="${product.id}"
+            class="w-20 text-center border rounded-lg"
+        >
+    `;
+
+    productContainer.appendChild(row);
+});
 
     addInputListeners();
     calculateTotal();
