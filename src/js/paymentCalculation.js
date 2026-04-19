@@ -20,9 +20,9 @@ async function loadProducts() {
     productContainer.innerHTML = "";
 
  products.forEach(product => {
-    cart[product.id] = 0;
+    cart[product.product_id] = 0;
 
-    const productImage =  `/images/${product.name.trim().toLowerCase()}.jpeg` || product.image_url;
+    const productImage = product.image_url;
 
     const row = document.createElement("div");
     row.className = "bg-white rounded-2xl shadow p-4 flex flex-col items-center text-center";
