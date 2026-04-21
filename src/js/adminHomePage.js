@@ -5,6 +5,8 @@ const viewActionsButton = document.getElementById('viewActionsButton');
 const sendRobotTestButton = document.getElementById('sendRobotTestButton');
 const robotTestStatus = document.getElementById('robotTestStatus');
 const logOutButton = document.getElementById('logOutButton');
+setPathButton.disabled = true;
+
 
 if (!localStorage.getItem('adminUsername')) {
     window.location.replace('./adminLogin.html');
@@ -14,8 +16,9 @@ setInterval(checkAdminActive, 2 * 60 * 1000); // Check every 2 minutes
 checkAdminActive(); // Initial check on page load
 
 setPathButton.addEventListener('click', () => {
-    window.location.replace("./setPath.html");
-    updateActivity();
+    //window.location.replace("./setPath.html");
+    //updateActivity();
+    alert('Page disabled');
     console.log('Set Path button clicked');
 });
 
