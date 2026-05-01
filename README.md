@@ -1,6 +1,6 @@
 ![Front Page](images/front_page.png)
 
-# [Vending Machine Website](https://github.com/orgs/Vendning-Machine-Team/repositories) - Website Team (Frontend)
+# [Vending Machine Website](https://github.com/orgs/Vendning-Machine-Team) - Website Team (Frontend)
 ### By Samantha Machado, Prince Patel, Adeyemi Akanbi, with advisory from Matthew Beck
 
 __Please consider__: if you like it __star it__!
